@@ -23,7 +23,7 @@ set softtabstop=2
 set expandtab
 set ignorecase smartcase
 set cursorline
-set wrap
+set nowrap
 set noswapfile
 set bs=2
 
@@ -66,6 +66,8 @@ set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
 " keymaps
 nmap , \
+map <silent> <LocalLeader>w :set wrap<CR>
+map <silent> <LocalLeader>nw :set nowrap<CR>
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 map <silent> <LocalLeader>nr :NERDTree<CR>
 map <silent> <LocalLeader>nf :NERDTreeFind<CR>
