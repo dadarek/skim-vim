@@ -46,5 +46,6 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
 alias ls='ls -aHG'
+alias gd='git diff'
 
 source ~/.git-completion.bash
