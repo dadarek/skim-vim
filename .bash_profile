@@ -47,5 +47,16 @@ alias bi='bundle install'
 alias bu='bundle update'
 alias ls='ls -aHG'
 alias gd='git diff'
+alias gds='git diff --staged'
+alias gwd='git diff --color-words'
+alias gwds='git diff --staged --color-words'
+alias gs='git status'
+alias gl='git log'
+alias gc='git commit'
+
+alias up='cd ..'
+alias back='cd -'
+
+bind 'set completion-ignore-case on'
 
 source ~/.git-completion.bash
