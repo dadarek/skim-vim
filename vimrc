@@ -103,6 +103,7 @@ nnoremap <silent> <LocalLeader>rw :Trim<CR>
 let vimclojure#HighlightBuiltins=0
 let vimclojure#ParenRainbow=1
 let NERDTreeShowHidden=1
+let NERDTreeIgnore=['.git', '.vimrc', '.DS_Store']
 let g:CommandTAcceptSelectionSplitMap=['<C-s>']
 let g:CommandTAcceptSelectionVSplitMap=['<C-v>']
 let g:CommandTCancelMap=['<Esc>', '<C-c>']
