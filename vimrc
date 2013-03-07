@@ -66,6 +66,7 @@ set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
 " keymaps
 nmap , \
+nmap ; :
 map <silent> <LocalLeader>w :set wrap<CR>
 map <silent> <LocalLeader>nw :set nowrap<CR>
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
