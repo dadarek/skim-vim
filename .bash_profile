@@ -1,15 +1,10 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export PATH=$HOME/.rvm/bin:$PATH
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/Library/Haskell/bin:$PATH
 export PATH=$HOME/bin/qt-5.0.0-beta:$PATH
 export PATH=$PATH:"/usr/local/mysql/bin"
-
-#ssh-add ~/.ssh/id_rsa
-
 export PATH=$HOME/.bin:$PATH
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
-export ARDUINO_DIR=/Applications/Arduino.app/Contents/Resources/Java                                                                                                                                                                      
+export ARDUINO_DIR=/Applications/Arduino.app/Contents/Resources/Java
 export ARDMK_DIR=$HOME/IDEO/ArduinoProject/Arduino-Makefile
 
 function parse_git_dirty {
@@ -42,17 +37,22 @@ function proml {
 }
 proml
 
+alias mm='middleman'
 alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
-alias ls='ls -aHG'
+alias ls='ls -H'
+alias ll='ls -lH'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gwd='git diff --color-words'
 alias gwds='git diff --staged --color-words'
 alias gs='git status'
 alias gl='git log'
+alias glo='git log --oneline'
 alias gc='git commit'
+
+alias git-show-ignored='git ls-files -v | grep ^h'
 
 alias up='cd ..'
 alias back='cd -'
@@ -60,3 +60,5 @@ alias back='cd -'
 bind 'set completion-ignore-case on'
 
 source ~/.git-completion.bash
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
