@@ -80,16 +80,6 @@ map <silent> <LocalLeader>cj :CommandTJump<CR>
 map <silent> <LocalLeader>ct :CommandTTag<CR>
 imap <C-L> <SPACE>=><SPACE>
 
-" no arrow keys in normal and insert modes
-map <Left> :echo "no!"<cr>
-map <Right> :echo "no!"<cr>
-map <Up> :echo "no!"<cr>
-map <Down> :echo "no!"<cr>
-imap <Left> <Nop>
-imap <Right> <Nop>
-imap <Up> <Nop>
-imap <Down> <Nop>
-
 function! Trim()
   exe "normal mz"
   %s/\s*$//
