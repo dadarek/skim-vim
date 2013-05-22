@@ -51,6 +51,7 @@ alias gs='git status'
 alias gl='git log'
 alias glo='git log --oneline'
 alias gc='git commit'
+alias gb='git branch -a'
 
 alias git-show-ignored='git ls-files -v | grep ^h'
 
