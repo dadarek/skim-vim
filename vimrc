@@ -47,6 +47,9 @@ autocmd BufRead,InsertEnter,InsertLeave * 2match LineLengthError /\%126v.*/
 highlight LineLengthError ctermbg=black guibg=black
 autocmd ColorScheme * highlight LineLengthError ctermbg=black guibg=black
 
+" treat hamlc as haml
+au BufRead,BufNewFile *.hamlc set ft=haml
+
 " set quickfix window to appear after grep invocation
 autocmd QuickFixCmdPost *grep* cwindow
 
