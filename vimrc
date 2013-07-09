@@ -6,6 +6,8 @@ call pathogen#infect()
 filetype plugin indent on
 
 " Options
+set exrc
+set secure
 set autoindent
 set nosmartindent
 set history=10000
