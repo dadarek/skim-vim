@@ -52,7 +52,7 @@ alias gs='git status'
 alias s='git status'
 alias gl='git log'
 alias l='git log'
-alias glo='git log --oneline'
+alias glo='git log --oneline --decorate'
 alias gc='git commit'
 alias gb='git branch -a'
 
