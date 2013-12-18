@@ -1,11 +1,14 @@
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/Library/Haskell/bin:$PATH
-export PATH=$HOME/bin/qt-5.0.0-beta:$PATH
 export PATH=$PATH:"/usr/local/mysql/bin"
 export PATH=$HOME/.bin:$PATH
 
-export ARDUINO_DIR=/Applications/Arduino.app/Contents/Resources/Java
-export ARDMK_DIR=$HOME/IDEO/ArduinoProject/Arduino-Makefile
+#export ARDUINO_DIR=/Applications/Arduino.app/Contents/Resources/Java
+#export ARDMK_DIR=$HOME/IDEO/ArduinoProject/Arduino-Makefile
+
+export RABBITMQ_HOME=$HOME/bin/rabbitmq_server-3.2.0
+
+export JAVA_HOME=`/usr/libexec/java_home`
 
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
