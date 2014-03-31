@@ -34,7 +34,7 @@ function proml {
       ;;
   esac
 
-  PS1="$GREEN\$(parse_git_branch)$BLACK 🍔  "
+  PS1="\W $GREEN\$(parse_git_branch)$BLACK 🍔  "
   PS2='> '
   PS4='+ '
 }
