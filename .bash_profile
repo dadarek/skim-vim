@@ -69,3 +69,6 @@ bind 'set completion-ignore-case on'
 source ~/.git-completion.bash
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+stty -ixon
+HISTSIZE=10000
