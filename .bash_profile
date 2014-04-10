@@ -17,6 +17,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 function proml {
+  local      ORANGE="\[\033[1;31m\]"
   local        BLUE="\[\033[0;34m\]"
   local         RED="\[\033[0;31m\]"
   local   LIGHT_RED="\[\033[1;31m\]"
@@ -25,6 +26,7 @@ function proml {
   local       WHITE="\[\033[1;37m\]"
   local  LIGHT_GRAY="\[\033[0;37m\]"
   local  BLACK="\[\033[0;0m\]"
+  local YELLOW="\[\033[0;33m\]"
   case $TERM in
     xterm*)
       TITLEBAR='\[\033]0;\u@\h:\w\007\]'
@@ -34,7 +36,7 @@ function proml {
       ;;
   esac
 
-  PS1="$BLUE\W $GREEN\$(parse_git_branch)$BLACK 🍔  "
+  PS1="$ORANGE\W $GREEN\$(parse_git_branch)$BLACK 🍔  "
   PS2='> '
   PS4='+ '
 }
