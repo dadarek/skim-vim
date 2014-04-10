@@ -60,6 +60,7 @@ alias l='git log'
 alias glo='git log --oneline --decorate'
 alias gc='git commit'
 alias gb='git branch -a'
+alias g='git'
 
 alias git-show-ignored='git ls-files -v | grep ^h'
 
