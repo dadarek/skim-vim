@@ -65,6 +65,9 @@ alias git-show-ignored='git ls-files -v | grep ^h'
 
 alias up='cd ..'
 alias back='cd -'
+alias ..='cd ..'
+
+alias ss='cowsay -f stegosaurus'
 
 bind 'set completion-ignore-case on'
 
