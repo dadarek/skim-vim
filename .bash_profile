@@ -9,6 +9,7 @@ export PATH=$HOME/.bin:$PATH
 export RABBITMQ_HOME=$HOME/bin/rabbitmq_server-3.2.0
 
 export JAVA_HOME=`/usr/libexec/java_home`
+export GOPATH=$HOME/.go
 
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
@@ -42,7 +43,7 @@ function proml {
 }
 proml
 
-alias mm='middleman'
+alias mm='bundle exec middleman'
 alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
@@ -59,7 +60,7 @@ alias gl='git log'
 alias l='git log'
 alias glo='git log --oneline --decorate'
 alias gc='git commit'
-alias gb='git branch -a'
+alias gb='git branch'
 alias g='git'
 
 alias git-show-ignored='git ls-files -v | grep ^h'
@@ -72,9 +73,11 @@ alias ss='cowsay -f stegosaurus'
 
 bind 'set completion-ignore-case on'
 
-source ~/.git-completion.bash
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 stty -ixon
 HISTSIZE=10000
+
+. /usr/local/etc/bash_completion.d/git-completion.bash
+
+export PGDATA=/usr/local/var/postgres/
