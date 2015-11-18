@@ -15,3 +15,7 @@
   unignore = update-index --no-assume-unchanged
 [push]
   default = tracking
+[core]
+  editor = vim
+  pager = less -r
+  excludesfile = ~/.gitignore
