@@ -96,6 +96,8 @@ nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <c-p> :TmuxNavigatePrevious<cr>
 
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 function! Trim()
   exe "normal mz"
   %s/\s*$//
