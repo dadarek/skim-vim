@@ -69,7 +69,7 @@ set undofile
 set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
-set wildignore+=*.mp3,*.ogg,*.jpg,*.jpeg
+set wildignore+=*.mp3,*.ogg,*.jpg,*.jpeg,*.retry
 
 " keymaps
 nmap , \
@@ -89,6 +89,8 @@ imap <C-L> <SPACE>=><SPACE>
 
 " Tmux key bindings
 let g:tmux_navigator_no_mappings = 1
+
+" https://github.com/christoomey/vim-tmux-navigator
 
 nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
@@ -111,8 +113,9 @@ nnoremap <silent> <LocalLeader>rw :Trim<CR>
 let vimclojure#HighlightBuiltins=0
 let vimclojure#ParenRainbow=1
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['.git', '.vimrc', '.DS_Store']
+let NERDTreeIgnore=['.git', '.vimrc', '.DS_Store', '.retry']
 let g:CommandTAcceptSelectionSplitMap=['<C-s>']
 let g:CommandTAcceptSelectionVSplitMap=['<C-v>']
 let g:CommandTCancelMap=['<Esc>', '<C-c>']
 let g:CommandTMaxHeight=10
+let g:vim_markdown_folding_disabled = 1

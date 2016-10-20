@@ -1,15 +1,5 @@
 export PATH=$HOME/bin:$PATH
-export PATH=$HOME/Library/Haskell/bin:$PATH
-export PATH=$PATH:"/usr/local/mysql/bin"
 export PATH=$HOME/.bin:$PATH
-
-#export ARDUINO_DIR=/Applications/Arduino.app/Contents/Resources/Java
-#export ARDMK_DIR=$HOME/IDEO/ArduinoProject/Arduino-Makefile
-
-export RABBITMQ_HOME=$HOME/bin/rabbitmq_server-3.2.0
-
-export JAVA_HOME=`/usr/libexec/java_home`
-export GOPATH=$HOME/.go
 
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
@@ -77,7 +67,3 @@ bind 'set completion-ignore-case on'
 
 stty -ixon
 HISTSIZE=10000
-
-. /usr/local/etc/bash_completion.d/git-completion.bash
-
-export PGDATA=/usr/local/var/postgres/
